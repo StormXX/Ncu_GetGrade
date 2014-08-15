@@ -22,7 +22,7 @@ class ncu_getGrade:
 		self.password=''
 		self.sessionID=''
 
-	def getLoginSession(self,userName,passWord,term):
+	def getGrade(self,userName,passWord,term):
 		#conn=httplib2.Http(proxy_info=httplib2.ProxyInfo(socks.PROXY_TYPE_HTTP,'127.0.0.1',8888))
 		conn=httplib2.Http()
 		url='http://218.64.56.18/Logon.do?method=logon'
@@ -86,4 +86,4 @@ passW=raw_input()
 print u'请输入学期，格式示范：2013-2014-2（代表2013-2014第二个学期）'
 terM=raw_input()
 g=ncu_getGrade()
-g.getLoginSession(userN,passW,terM)
+g.getGrade(userN,passW,terM)
