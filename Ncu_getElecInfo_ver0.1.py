@@ -68,3 +68,6 @@ roomNum=raw_input()
 e=ncu_getElecInfo()
 e.GetElecInfo(roomNum)
 
+print u'press enter to exit'
+quit=raw_input()
+
