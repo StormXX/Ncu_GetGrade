@@ -63,11 +63,13 @@ print u"""#---------------------------------------
 #---------------------------------------
 """
 
-print u'请输入寝室号：'
-roomNum=raw_input()
-e=ncu_getElecInfo()
-e.GetElecInfo(roomNum)
+quit=''
+while(quit!='q'):
+    print u'请输入寝室号：'
+    roomNum=raw_input()
+    e=ncu_getElecInfo()
+    e.GetElecInfo(roomNum)
 
-print u'press enter to exit'
-quit=raw_input()
+    print u'press "q" to exit || press enter to continue'
+    quit=raw_input()
 
